@@ -42,3 +42,44 @@ blockquote { font-size: 36px; font-style: italic; font-weight: 300; margin: 0 0 
 .btn-outline:hover { background: white; color: #3882F6; }
 
 footer { background-color: #1F2937; color: white; text-align: center; padding: 30px; }
+/* --- MOBILE RESPONSIVENESS --- */
+
+@media (max-width: 800px) {
+    /* 1. Stack the Hero section (Text on top of Image) */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px; /* Smaller text for smaller screens */
+    }
+
+    /* 2. Stack the Feature Cards vertically */
+    .feature-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    /* 3. Make the Header wrap nicely */
+    header {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    /* 4. Fix the CTA (Sign up box) for mobile */
+    .cta-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 30px;
+    }
+
+    /* 5. Adjust padding for the whole page */
+    .top-section, .features, .quote-section, .cta-section {
+        padding: 40px 5%;
+    }
+}
