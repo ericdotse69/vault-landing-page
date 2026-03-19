@@ -198,3 +198,18 @@ footer {
     padding: 30px;
     margin-top: auto;
 }
+
+/* Make the main button grow and change color on hover */
+.btn:hover, .btn-outline:hover {
+    transform: scale(1.05); /* Grows by 5% */
+    background-color: #1d4ed8; /* A slightly darker blue */
+    transition: all 0.2s ease-in-out; /* Makes it smooth, not jerky */
+}
+
+/* Make the feature boxes glow when you hover over them */
+.box:hover {
+    border-color: #fbbf24; /* Changes to a "Gold" color for Vault 69 */
+    box-shadow: 0px 10px 20px rgba(56, 130, 246, 0.3);
+    cursor: pointer;
+    transition: 0.3s;
+}
